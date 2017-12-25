@@ -1,3 +1,7 @@
+.intro{
+    background-image:url('http://st.depositphotos.com/1084193/1973/v/950/depositphotos_19732919-abstract-blur-eco-green-computer-technology-business-background.jpg');
+}
+
 .header{
     font-family:'Cabin', sans-serif;
     margin-left:20px;
@@ -20,7 +24,7 @@
 
 .machine_learning{
     background-image:url('https://www.kdnuggets.com/wp-content/uploads/blackboard-header.jpg');
-    height:60%;
+    height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +33,7 @@
 
 .web_development{
     background-image:url('http://www.webtenet.com/wp-content/uploads/2017/09/web-development-WebTenetBlog.png');
-    height:60%;
+    height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +42,7 @@
 
 .app_development{
     background-image:url('http://technotronicsllp.com/wp-content/uploads/2016/09/developing-apps.jpg');
-    height:60%;
+    height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +51,7 @@
 
 .python{
     background-image:url('http://fossbytes.com/wp-content/uploads/2016/08/python-Programming-Language-Software.jpg');
-    height:60%;
+    height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +60,7 @@
 
 .competitive_coding{
     background-image:url('https://competitiveprogrammingtutorials.files.wordpress.com/2016/03/shutterstock-programming.jpg?w=700&h=430&crop=1');
-    height:60%;
+    height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +69,7 @@
 
 .cyber_security{
     background-image:url('http://www.telegraph.co.uk/content/dam/business/spark/Cyber%20Security/cyber-security-2017/cyber-security-nhs-attack-xlarge.jpg');
-    height:60%;
+    height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

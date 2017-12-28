@@ -1,5 +1,8 @@
 .intro{
     background-image:url('http://st.depositphotos.com/1084193/1973/v/950/depositphotos_19732919-abstract-blur-eco-green-computer-technology-business-background.jpg');
+    height:100%;
+    margin: 0;
+    position: relative;
 }
 
 .header{

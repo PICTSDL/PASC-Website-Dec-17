@@ -1,116 +1,28 @@
 <html>
 	<head>
-	<title>PASC|Home</title>
+	<title>PASC|Alumni</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="../res/css/navbar.css" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
-<link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
 <!--Flipper-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>        
- <style>
-
-.info-card {
-    
-	-webkit-perspective: 600px;
-    -moz-perspective: 600px;
-    -o-perspective: 600px;
-    perspective: 600px;
-    margin-top: 3%;
-    margin-left: 10%;
-}
-
-.front, .back {
-	background: #FFF;
-	border-radius: 10px;
-	transition: -webkit-transform 1s;
-	-webkit-transform-style: preserve-3d;
-	-webkit-backface-visibility: hidden;
-    transform-style: preserve-3d;
-	backface-visibility: hidden;
-    -moz-transform-style: preserve-3d;
-	-moz-backface-visibility: hidden;
-    -o-transform-style: preserve-3d;
-	-o-backface-visibility: hidden;
-	border: 1px solid black;
-}
-
-.front {
-	overflow: hidden;
-	width: 250px;
-	height: 250px;
-	position: absolute;
-	z-index: 1;
-}
-
-.back {
-	padding: 20px;
-	padding-top: 0px;
-	width: 250px;
-	height: 250px;
-	-webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-	overflow: hidden;
-    
-}
-
-.info-card:hover .back {
-	-webkit-transform: rotateY(0);
-    -moz-transform: rotateY(0);
-    -o-transform: rotateY(0);
-    transform: rotateY(0);
-}
-
-.info-card:hover .front {
-	-webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-}
-
-.card-image {
-    width: 100%;
-    height: 100%;
-}
-        
-.buttonflip a {
-    padding:7px 7px;
-    background-color:#101010;
-    color:white;
-    border:none;
-    font-size:15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 5px;
-    margin-left:45px;
-    font-family:'Barlow Semi Condensed';
-    letter-spacing: 3px;
-}
-
-.buttonflip a:hover {
-   background-color: white; 
-   color:#101010;
-   border: 1px solid #101010;
-}       
-        </style>	</head>
+	</head>
     
 	<body>
-	<div class="navbar">
-		<div class="brand">PASC</div>
+	<div class="pasc-navbar">
+		<div class="pasc-brand">PASC</div>
 		<div class="menu-bar">
-		<span class="menu-items active"><a href="../Home/index.html">Home</a></span>
+		<span class="menu-items"><a href="../Home/index.html">Home</a></span>
 		<span class="menu-items"><a href="../AboutUs/index.html">About Us</a></span>
 		<span class="menu-items"><a href="../Publications/index.html">Publications</a></span>
 		<span class="menu-items"><a href="../SIG/index.html">SIG</a></span>
 		<span class="menu-items"><a href="../Projects/index.html">Projects</a></span>
-		<span class="menu-items"><a href="../Alumni/index.html">Alumni</a></span>
+		<span class="menu-items active"><a href="../Alumni/index.html">Alumni</a></span>
 	</div>
 		<span class="menu-items hamburger" id="hamburger">
 			<i class="fa fa-bars" aria-hidden="true"></i>
@@ -118,64 +30,64 @@
 	</div>
 	<div class="hamburger-menu" id="hmenu">
 		<div class="hmenu-items">Menu<span id="cancel"><i class="fa fa-times" aria-hidden="true"></i></span></div>
-		<div class="hmenu-items active"><a href="../Home/index.html">Home</a></div>
+		<div class="hmenu-items"><a href="../Home/index.html">Home</a></div>
 		<div class="hmenu-items"><a href="../AboutUs/index.html">About Us</a></div>
 		<div class="hmenu-items"><a href="../Publications/index.html">Publications</a></div>
 		<div class="hmenu-items"><a href="../SIG/index.html">SIG</a></div>
 		<div class="hmenu-items"><a href="../Projects/index.html">Projects</a></div>
-		<div class="hmenu-items"><a href="../Alumni/index.html">Alumni</a></div>
+		<div class="hmenu-items active"><a href="../Alumni/index.html">Alumni</a></div>
         </div>
-<div class="container">
-    <div class="row">		
-    		<div class=" col-sm-4 col-md-4 col-lg-4">
-                <div class="info-card">
-				    <div class="front">
-					   <img class="card-image" src="https://awards.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta">
-				    </div>
-                    <div class="back">
-                        <h2>PASC</h2><hr style="border:1px solid #101010; width:100%;">
-                    <p>
-                        The Association for Computing Machinery is an international learned society for computing.
-                    </p>
-                    
-                        <div class="buttonflip"><a href="#Event1">Know More</a></div>
+        <div class="container alumni-content">
+            <div class="row">		
+            		<div class=" col-sm-4 col-md-4 col-lg-4">
+                        <div class="info-card">
+        				    <div class="front">
+        					   <img class="card-image" src="https://awards.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta">
+        				    </div>
+                            <div class="back">
+                                <h2>PASC</h2><hr style="border:1px solid #101010; width:100%;">
+                            <p>
+                                The Association for Computing Machinery is an international learned society for computing.
+                            </p>
+                            
+                                <div class="buttonflip"><a href="#Event1">Know More</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        
-        <div class=" col-sm-4 col-md-4 col-lg-4">
-                <div class="info-card">
-				    <div class="front">
-					   <img class="card-image" src="https://awards.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta">
-				    </div>
-                    <div class="back">
-                        <h2>PASC</h2><hr style="border:1px solid #101010; width:100%;">
-                    <p>
-                        The Association for Computing Machinery is an international learned society for computing.
-                    </p>
-                    
-                        <div class="buttonflip"><a href="#Event1">Know More</a></div>
+                
+                <div class=" col-sm-4 col-md-4 col-lg-4">
+                        <div class="info-card">
+        				    <div class="front">
+        					   <img class="card-image" src="https://awards.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta">
+        				    </div>
+                            <div class="back">
+                                <h2>PASC</h2><hr style="border:1px solid #101010; width:100%;">
+                            <p>
+                                The Association for Computing Machinery is an international learned society for computing.
+                            </p>
+                            
+                                <div class="buttonflip"><a href="#Event1">Know More</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        <div class=" col-sm-4 col-md-4 col-lg-4">
-                <div class="info-card">
-				    <div class="front">
-					   <img class="card-image" src="https://awards.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta">
-				    </div>
-                    <div class="back">
-                        <h2>PASC</h2><hr style="border:1px solid #101010; width:100%;">
-                    <p>
-                        The Association for Computing Machinery is an international learned society for computing.
-                    </p>
-                    
-                        <div class="buttonflip"><a href="#Event1">Know More</a></div>
+                <div class=" col-sm-4 col-md-4 col-lg-4">
+                        <div class="info-card">
+        				    <div class="front">
+        					   <img class="card-image" src="https://awards.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta">
+        				    </div>
+                            <div class="back">
+                                <h2>PASC</h2><hr style="border:1px solid #101010; width:100%;">
+                            <p>
+                                The Association for Computing Machinery is an international learned society for computing.
+                            </p>
+                            
+                                <div class="buttonflip"><a href="#Event1">Know More</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                
             </div>
-        
-    </div>
-     <hr style="border:1px solid black; width:100%;">
+            <hr style="border:1px solid black; width:100%;">
         </div>
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

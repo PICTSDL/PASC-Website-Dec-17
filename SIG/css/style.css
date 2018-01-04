@@ -2,6 +2,7 @@ body{
     font-family: 'Barlow Semi Condensed';
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
 }
 .header,.header-content{
     color: white;
@@ -190,8 +191,14 @@ body{
     font-size:150%;
 }
 @media all and (max-height: 640px){
+    body{
+        font-family: 'Barlow Semi Condensed';
+        margin: 0;
+        padding: 0;
+    }
     .intro{
         padding-top: 15%;
+
     }
     .holder{
         display: none;
@@ -332,6 +339,11 @@ body{
     }
 }
 @media all and (max-height: 480px){
+    body{
+        font-family: 'Barlow Semi Condensed';
+        margin: 0;
+        padding: 0;
+    }
     .intro{
         padding-top: 5%
     }

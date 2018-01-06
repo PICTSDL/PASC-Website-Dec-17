@@ -1,20 +1,45 @@
+body{
+    font-family: 'Barlow Semi Condensed';
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+.header,.header-content{
+    color: white;
+    z-index: 999;
+}
+.holder{
+    background-color: #333;
+    height: 70%;
+    width: 100%;
+    opacity: 0.6;
+    position: relative;
+    top: -50%
+
+}
 .intro{
-    background-image:url('http://st.depositphotos.com/1084193/1973/v/950/depositphotos_19732919-abstract-blur-eco-green-computer-technology-business-background.jpg');
+    background-image:url('https://cdn-images-1.medium.com/max/1280/1*euZOtdFE4rCo0GNq0yOofQ.jpeg');
+    height:100%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
 }
 
-.header{
+.intro > .header{
     font-family:'Cabin', sans-serif;
-    margin-left:20px;
-    padding-top:50px;
+    margin-left:10%;
+    padding-top:10%;
     font-size:240%;
     text-decoration:underline red;
 }
 
-.header-content{
+.intro > .header-content{
     font-family:'Open Sans', sans-serif;
-    padding-left:40px;
-    padding-right:5px;
-    padding-top:25px;
+    margin-left:10%;
+    width: 50%;
     font-size:150%;
 }
 
@@ -23,23 +48,53 @@
 }
 
 .machine_learning{
-    background-image:url('https://www.kdnuggets.com/wp-content/uploads/blackboard-header.jpg');
+    background-image:url('https://www.cloudirec.com/blog/wp-content/uploads/2017/06/machine-learning-fellowship.jpg');
     height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: right;
+    padding-top: 20%;
+    color: white;
 }
-
+.machine_learning > .header{
+    font-family:'Cabin', sans-serif;
+    margin-right:10%;
+    padding-top:5%;
+    font-size:240%;
+    text-decoration:underline red;
+    color: white;
+}
+.machine_learning > .header-content{
+    font-family:'Open Sans', sans-serif;
+    margin-left:40%;
+    width: 50%;
+    font-size:150%;
+}
 .web_development{
-    background-image:url('http://www.webtenet.com/wp-content/uploads/2017/09/web-development-WebTenetBlog.png');
+    background-image:url('http://www.brainminetech.com/blog/wp-content/uploads/2016/05/web-development-in-pune.jpg');
     height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: 15%;
     background-size: cover;
 }
+.web_development > .header{
+    font-family:'Cabin', sans-serif;
+    margin-left:10%;
+    padding-top:12%;
+    font-size:240%;
+    text-decoration:underline red;
+}
+.web_development > .header-content{
+    font-family:'Open Sans', sans-serif;
+    margin-left:10%;
+    width: 50%;
+    font-size:150%;
 
+}
 .app_development{
     background-image:url('http://technotronicsllp.com/wp-content/uploads/2016/09/developing-apps.jpg');
     height:100%;
@@ -47,31 +102,375 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 15%;
+    text-align: right;
+}
+.app_development > .header{
+    font-family:'Cabin', sans-serif;
+    margin-right:10%;
+    padding-top:12%;
+    font-size:240%;
+    text-decoration:underline red;
+}
+.app_development > .header-content{
+    font-family:'Open Sans', sans-serif;
+    margin-left:40%;
+    width: 50%;
+    font-size:150%;
 }
 
 .python{
-    background-image:url('http://fossbytes.com/wp-content/uploads/2016/08/python-Programming-Language-Software.jpg');
+    background-image:url('https://udemy-images.udemy.com/course/750x422/433798_1de9_4.jpg');
     height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 15%;
+    color: white;
 }
-
+.python > .header{
+    font-family:'Cabin', sans-serif;
+    margin-left:10%;
+    padding-top:12%;
+    font-size:240%;
+    text-decoration:underline red;
+   
+}
+.python > .header-content{
+    font-family:'Open Sans', sans-serif;
+    margin-left:10%;
+    width: 50%;
+    font-size:150%;
+}
 .competitive_coding{
-    background-image:url('https://competitiveprogrammingtutorials.files.wordpress.com/2016/03/shutterstock-programming.jpg?w=700&h=430&crop=1');
+    background-image:url('https://4.bp.blogspot.com/-DpR0kl-GvbE/Wbd7FVCYioI/AAAAAAAAFb0/s8UbA6NBSSs27Cpp4ufyQvPmU8C4lEQtQCLcBGAs/s1600/programming_01_0.jpg');
     height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: right;
+    padding-top: 15%;
+    color: white
 }
-
+.competitive_coding > .header{
+    font-family:'Cabin', sans-serif;
+    margin-right:10%;
+    padding-top:12%;
+    font-size:240%;
+    text-decoration:underline red;
+}
+.competitive_coding > .header-content{
+    font-family:'Open Sans', sans-serif;
+    margin-left:40%;
+    width: 50%;
+    font-size:150%;
+}
 .cyber_security{
-    background-image:url('http://www.telegraph.co.uk/content/dam/business/spark/Cyber%20Security/cyber-security-2017/cyber-security-nhs-attack-xlarge.jpg');
+    background-image:url('http://www.appincoimbatore.com/reimages/appin-information-security.jpg');
     height:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 15%;
+    color: white;
+}
+.cyber_security > .header{
+    font-family:'Cabin', sans-serif;
+    margin-left:10%;
+    padding-top:12%;
+    font-size:240%;
+    text-decoration:underline red;   
+}
+.cyber_security > .header-content{
+    font-family:'Open Sans', sans-serif;
+    margin-left:10%;
+    width: 50%;
+    font-size:150%;
+}
+@media all and (max-height: 640px){
+    body{
+        font-family: 'Barlow Semi Condensed';
+        margin: 0;
+        padding: 0;
+    }
+    .intro{
+        padding-top: 15%;
+
+    }
+    .holder{
+        display: none;
+    }
+    .intro .holder{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        display: block;
+    }
+    .intro > .header{
+        font-size:220%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .intro > .header-content{
+        font-size:120%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .header-content:first-letter{
+        font-size:160%;
+    }
+
+    .machine_learning{
+        padding-top: 20%;
+    }
+
+    .machine_learning > .header{
+        font-size:210%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .machine_learning > .header-content{
+        font-size:120%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .web_development{
+        padding-top: 20%;
+    }
+
+    .web_development > .header{
+        font-size:210%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .web_development > .header-content{
+        font-size:120%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .app_development{
+        padding-top: 20%;
+    }
+
+    .app_development > .header{
+        font-size:210%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .app_development > .header-content{
+        font-size:120%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .python{
+        padding-top: 20%;
+    }
+
+    .python > .header{
+        font-size:210%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .python > .header-content{
+        font-size:120%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .competitive_coding{
+        padding-top: 20%;
+    }
+
+    .competitive_coding > .header{
+        font-size:220%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .competitive_coding > .header-content{
+        font-size:120%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .cyber_security{
+        padding-top: 20%;
+    }
+
+    .cyber_security > .header{
+        font-size:210%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .cyber_security > .header-content{
+        font-size:120%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+}
+@media all and (max-height: 480px){
+    body{
+        font-family: 'Barlow Semi Condensed';
+        margin: 0;
+        padding: 0;
+    }
+    .intro{
+        padding-top: 5%
+    }
+
+    .intro > .header{
+        font-size:180%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .intro > .header-content{
+        font-size:110%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .header-content:first-letter{
+        font-size:160%;
+    }
+
+    .machine_learning{
+        padding-top: 5%;
+    }
+
+    .machine_learning > .header{
+        font-size:180%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .machine_learning > .header-content{
+        font-size:110%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .web_development{
+        padding-top: 5%;
+    }
+
+    .web_development > .header{
+        font-size:180%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .web_development > .header-content{
+        font-size:110%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .app_development{
+        padding-top: 5%;
+    }
+
+    .app_development > .header{
+        font-size:180%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .app_development > .header-content{
+        font-size:110%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .python{
+        padding-top: 5%;
+    }
+
+    .python > .header{
+        font-size:180%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .python > .header-content{
+        font-size:110%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .competitive_coding{
+        padding-top: 5%;
+    }
+
+    .competitive_coding > .header{
+        font-size:170%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .competitive_coding > .header-content{
+        font-size:110%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
+
+    .cyber_security{
+        padding-top: 5%;
+    }
+
+    .cyber_security > .header{
+        font-size:180%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    .cyber_security > .header-content{
+        font-size:110%;
+        width:80%;
+        margin: 0 0 0 10%;
+        text-align: left;
+    }
 }

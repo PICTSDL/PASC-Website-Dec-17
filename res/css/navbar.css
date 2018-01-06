@@ -2,18 +2,20 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.navbar{
+.pasc-navbar{
 	background-color:#61bfbe ;
 	color: white;
-	height: 75px;
+	height: 80px;
 	width: 100%;
 	position: fixed;
+	z-index: 1000;
+	margin: 0;
 }
-.brand{
+.pasc-brand{
 	float: left;
 	font-weight: bold;
 	font-size: 150%;
-	padding: 20px 0 20px 10px;
+	padding: 25px 0 20px 10px;
 }
 .menu-bar{
 	width: 50%;
@@ -23,9 +25,8 @@ body{
 .menu-items{
 	float: right;
 	margin: 0;
-	padding: 25px;
+	padding: 27px;
 	color: white;
-	height: 25px;
 	font-size: 110%;
 	transition: all 0.5s ease-out;
 	webkit-transition: all 0.5s ease-out;
@@ -37,16 +38,22 @@ body{
 .hamburger{
 	display: none;
 	cursor: pointer;
+	padding: 32px;
 }
 .hamburger-menu{
 	display: none;
 }
 .active{
-	background-color:#65cfce; 
+	background-color:#65cfce;
+	border-bottom: solid 4px #419f9e; 
 }
 .menu-bar a,.hamburger-menu a{
 	text-decoration: none;
 	color: white;
+}
+.menu-bar a:hover,.hamburger-menu a:hover{
+	color: white;
+	text-decoration: none;
 }
 @media all and (max-width: 1500px){
 	.menu-bar{
@@ -60,12 +67,13 @@ body{
 		right: -300px;
 		height: 100%;
 		width: 300px;
+		z-index: 1000;
 	}
 	.hmenu-items{
 		color: white;
 		width: 300px;
-		padding: 20px 0 0 10px;
-		height: 55px;
+		padding: 15px 0 15px 20px;
+		/*height: 55px;*/
 		border-bottom: 1px solid white;
 		font-size:150%;
 		text-align: left;
@@ -84,6 +92,7 @@ body{
 		color: white;
 		float: right;
 		padding-right:20px; 
+		padding-top: 5px;
 
 	}
-} 
+}

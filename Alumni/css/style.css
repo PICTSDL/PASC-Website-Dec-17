@@ -1,0 +1,90 @@
+.info-card {
+    
+	-webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -o-perspective: 600px;
+    perspective: 600px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+	backface-visibility: hidden;
+    -moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+    -o-transform-style: preserve-3d;
+	-o-backface-visibility: hidden;
+	border: 1px solid black;
+}
+
+.front {
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	z-index: 1;
+}
+
+.back {
+	padding: 20px;
+	padding-top: 0px;
+	width: 250px;
+	height: 250px;
+	-webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+	overflow: hidden;
+    
+}
+
+.info-card:hover .back {
+	-webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.info-card:hover .front {
+	-webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+        
+.buttonflip a {
+    padding:7px 7px;
+    background-color:#101010;
+    color:white;
+    border:none;
+    font-size:15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left:45px;
+    font-family:'Barlow Semi Condensed';
+    letter-spacing: 3px;
+}
+
+.buttonflip a:hover {
+   background-color: white; 
+   color:#101010;
+   border: 1px solid #101010;
+}       
+.alumni-content{
+    position: relative;
+    top: 100px;
+}

@@ -1,0 +1,57 @@
+.slideshow>figure{
+ animation: imageAnimation 18s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.slideshow>figure:nth-child(1){
+    background-image:url('http://www.brainminetech.com/blog/wp-content/uploads/2016/05/web-development-in-pune.jpg');
+}
+
+.slideshow>figure:nth-child(2){
+    animation-delay:6s;
+    background-image:url('http://technotronicsllp.com/wp-content/uploads/2016/09/developing-apps.jpg');
+}
+
+.slideshow>figure:nth-child(3){
+    animation-delay:12s;
+    background-image:url('https://4.bp.blogspot.com/-DpR0kl-GvbE/Wbd7FVCYioI/AAAAAAAAFb0/s8UbA6NBSSs27Cpp4ufyQvPmU8C4lEQtQCLcBGAs/s1600/programming_01_0.jpg');
+}
+
+@keyframes imageAnimation{
+0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0
+  }
+100% {
+    opacity: 0
+  }
+
+}
+
+
+.abtus{
+  font-size: 140%;
+  font-family: 'Verdana',sans-serif;
+
+
+}

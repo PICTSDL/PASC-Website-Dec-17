@@ -33,7 +33,7 @@ body{
 	cursor: pointer;
 }
 .menu-items:hover{
-	background-color:#65cfce; 
+	background-color:#65cfce;
 }
 .hamburger{
 	display: none;
@@ -45,7 +45,7 @@ body{
 }
 .active{
 	background-color:#65cfce;
-	border-bottom: solid 4px #419f9e; 
+	border-bottom: solid 4px #419f9e;
 }
 .menu-bar a,.hamburger-menu a{
 	text-decoration: none;
@@ -82,7 +82,7 @@ body{
 		cursor: pointer;
 	}
 	.hmenu-items:hover{
-		background-color: #65cfce; 
+		background-color: #65cfce;
 	}
 	.hamburger{
 		display: inline-block;
@@ -91,7 +91,7 @@ body{
 		cursor: pointer;
 		color: white;
 		float: right;
-		padding-right:20px; 
+		padding-right:20px;
 		padding-top: 5px;
 
 	}

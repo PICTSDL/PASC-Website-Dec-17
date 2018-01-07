@@ -1,57 +1,50 @@
-.slideshow>figure{
- animation: imageAnimation 18s linear infinite 0s;
-  backface-visibility: hidden;
+h3 {
+  display: inline-block;
+  padding: 10px;
+  background: #B9121B;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.full-screen {
   background-size: cover;
-  background-position: center center;
-  color: transparent;
-  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content{
+font-family: 'Verdana',sans-serif;
+font-size:140%;
+padding-top:8%;
+margin-left:2%;
+}
+
+.holder { 
+  margin-top:9%; 
+  background-color:#ccc;
+  height:340px;
+  overflow:hidden;
+  padding:10px;
+  font-family:Helvetica;
+}
+.holder .mask {
+  position: relative;
   left: 0px;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: 0;
+  top: 10px;
+  height:330px;
+  overflow: hidden;
 }
-
-.slideshow>figure:nth-child(1){
-    background-image:url('http://www.brainminetech.com/blog/wp-content/uploads/2016/05/web-development-in-pune.jpg');
+.holder ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  position: relative;
 }
-
-.slideshow>figure:nth-child(2){
-    animation-delay:6s;
-    background-image:url('http://technotronicsllp.com/wp-content/uploads/2016/09/developing-apps.jpg');
+.holder ul li {
+  padding:10px 0px;
 }
-
-.slideshow>figure:nth-child(3){
-    animation-delay:12s;
-    background-image:url('https://4.bp.blogspot.com/-DpR0kl-GvbE/Wbd7FVCYioI/AAAAAAAAFb0/s8UbA6NBSSs27Cpp4ufyQvPmU8C4lEQtQCLcBGAs/s1600/programming_01_0.jpg');
-}
-
-@keyframes imageAnimation{
-0% {
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  8% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  17% {
-    opacity: 1
-  }
-  50% {
-    opacity: 0
-  }
-100% {
-    opacity: 0
-  }
-
-}
-
-
-.abtus{
-  font-size: 140%;
-  font-family: 'Verdana',sans-serif;
-
-
+.holder ul li a {
+  color:darkred;
+  font-size:120%;
+  text-decoration:none;
 }

@@ -1,123 +1,149 @@
-<html>
-	<head>
-	<title>PASC|Home</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="../res/css/navbar.css" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html lang="en" >
 
-    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>PICT ACM STUDENT CHAPTER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-	</head>
-	<body>
-	<div class="pasc-navbar" tabindex="-1">
-		<div class="pasc-brand">PASC</div>
-		<div class="menu-bar">
-		<span class="menu-items active"><a href="../Home/index.html">Home</a></span>
-		<span class="menu-items"><a href="../AboutUs/index.html">About Us</a></span>
-		<span class="menu-items"><a href="../Publications/index.html">Publications</a></span>
-		<span class="menu-items"><a href="../SIG/index.html">SIG</a></span>
-		<span class="menu-items"><a href="../Projects/index.html">Projects</a></span>
-		<span class="menu-items"><a href="../Alumni/index.html">Alumni</a></span>
-	</div>
-		<span class="menu-items hamburger" id="hamburger">
-			<i class="fa fa-bars" aria-hidden="true"></i>
-		</span>
-	</div>
-	<div class="hamburger-menu" id="hmenu">
-		<div class="hmenu-items">Menu<span id="cancel"><i class="fa fa-times" aria-hidden="true"></i></span></div>
-		<div class="hmenu-items active"><a href="../Home/index.html">Home</a></div>
-		<div class="hmenu-items"><a href="../AboutUs/index.html">About Us</a></div>
-		<div class="hmenu-items"><a href="../Publications/index.html">Publications</a></div>
-		<div class="hmenu-items"><a href="../SIG/index.html">SIG</a></div>
-		<div class="hmenu-items"><a href="../Projects/index.html">Projects</a></div>
-		<div class="hmenu-items"><a href="../Alumni/index.html">Alumni</a></div>
-	</div>
+      <link rel="stylesheet" href="css/style.css">
 
+  
+</head>
 
-    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#mycarousel" data-slide-to="1"></li>
-        <li data-target="#mycarousel" data-slide-to="2"></li>
-      </ol>
+<body>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item">
-            <img src="https://unsplash.it/2000/1250?image=397" data-color="lightblue" alt="First Image">
-            <div class="carousel-caption">
-                <h3>First Image</h3>
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+            <div class="navbar-header">
+              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand">PICT <span>ACM STUDENT CHAPTER</span></a>              
+                     
             </div>
-        </div>
-        <div class="item">
-            <img src="https://unsplash.it/2000/1250?image=689" data-color="firebrick" alt="Second Image">
-            <div class="carousel-caption">
-                <h3>Second Image</h3>
-            </div>
-        </div>
-        <div class="item">
-            <img src="https://unsplash.it/2000/1250?image=675" data-color="violet" alt="Third Image">
-            <div class="carousel-caption">
-                <h3>Third Image</h3>
-            </div>
-        </div>
-
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="events-archive.html">Publications</a></li>
+                <li><a href="newsletter.html">Projects</a></li>
+                <li><a href="gallery.html">SIG's</a></li>                
+                <li><a href="careers.html">Alumni</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
       </div>
+      <!-- END MENU -->    
+    </header>
+
+   
+  <!-- Full Page Image Background Carousel Header -->
+<section>  
+  <div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
 
 
-      <!-- Controls -->
-      <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col=ls-6 col-md-6 col-sm-6 content">
-                <h1 style="text-formatting:underline;">About Us</h1>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop 
-publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem 
-ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
-sometimes by accident, sometimes on purpose (injected humour and the like).
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('../res/images/img1.jpg');"></div>
+                <div class="carousel-caption">
+                     <h2 class="animated fadeInLeft">Exploring Minds</h2>
+                </div>
             </div>
- 
-<div class="col-sm-1 col-ls-1 col-md-1"></div>
-
-<div class="holder col-ls-4 col-md-4 col-sm-4">
-  <h1>Newsfeed</h1>
-  <ul id="ticker01">
-<li><span>10/10/2007</span><a href="#">The first thing that most Javascript programmers</a></li>
-<li><span>10/10/2007</span><a href="#">End up doing is adding some code</a></li>
-<li><span>10/10/2007</span><a href="#">The code that you want to run</a></li>
-<li><span>08/10/2007</span><a href="#">Inside of which is the code that you want to run</a></li>
-<li><span>08/10/2007</span><a href="#">Right when the page is loaded</a></li>
-<li><span>05/10/2007</span><a href="#">Problematically, however, the Javascript code</a></li>
-<li><span>04/10/2007</span><a href="#">The first thing that most Javascript programmers</a></li>
-<li><span>04/10/2007</span><a href="#">End up doing is adding some code</a></li>
-<li><span>04/10/2007</span><a href="#">The code that you want to run</a></li>
-<li><span>03/10/2007</span><a href="#">Inside of which is the code that you want to run</a></li>
-<li><span>03/10/2007</span><a href="#">Right when the page is loaded</a></li>
-<li><span>01/10/2007</span><a href="#">Problematically, however, the Javascript code</a></li>
-</ul>
-</div>
-
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('../res/images/img2.jpg');"></div>
+                <div class="carousel-caption">
+                     <h2 class="animated fadeInDown">Creating Leaders</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('../res/images/img3.jpg');"></div>
+                <div class="carousel-caption">
+                     <h2 class="animated fadeInRight">Threading the team</h2>
+                </div>
+            </div>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
     </div>
+</section>    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script type="text/javascript" src="js/index.js"></script>
+<a class="scroll-down" address="true"></a>
+<section class="about">
+<p>OK SCROLL !</p>
+</section>
+  
+    <!--=========== BEGIN FOOTER SECTION ================-->
+    <footer id="footer">
+      <!-- Start footer top area -->
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-ld-4  col-md-4 col-sm-4">
+              <div class="single_footer_widget">
+                <h3>PICT ACM Student Chapter</h3>
+                <p>Address line1<br>Address line2<br>Address line3<br>Email address</p>
+              </div>
+            </div>
+
+            <div class="col-ld-4  col-md-4 col-sm-4">
+              <div class="single_footer_widget">
+                <h3>Social Links</h3>
+                <ul class="footer_social">
+                  <li><a data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip"  href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip"  href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a data-toggle="tooltip" data-placement="top" title="Linkedin" class="soc_tooltip"  href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a data-toggle="tooltip" data-placement="top" title="Youtube" class="soc_tooltip"  href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-ld-4  col-md-4 col-sm-4">
+              <div class="single_footer_widget">
+                <h3>Community</h3>
+                <ul class="footer_widget_nav">
+                  <li><a href="#">Meets</a></li>
+                  <li><a href="#">Members</a></li>
+                  <li><a href="#">Forum</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </div>
+            </div>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="../res/js/navbar.js"></script>
-	<script src="js/index.js"></script>
-    <script src="js/newsfeed.js"></script>
-	</body>
+          </div>
+        </div>
+      </div>
+      <!-- End footer top area -->
+
+    </footer>
+    <!--=========== END FOOTER SECTION ================--> 
+
+</body>
+
 </html>

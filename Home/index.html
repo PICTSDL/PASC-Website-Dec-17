@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" ng-app="scotchApp">
 
 <head>
   <meta charset="UTF-8">
@@ -11,11 +11,13 @@
 <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
-
-  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script data-require="angular-ui-bootstrap@0.12.0" data-semver="0.12.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="js/index.js"></script>  
 </head>
 
-<body>
+<body ng-controller="mainController">
 
     <header id="header">
       <!-- BEGIN MENU -->
@@ -23,7 +25,7 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
             <div class="navbar-header">
               <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -32,14 +34,14 @@
               <a class="navbar-brand">PICT <span>ACM STUDENT CHAPTER</span></a>              
                      
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse" ng-class="!navCollapsed && 'in'">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="events-archive.html">Publications</a></li>
-                <li><a href="newsletter.html">Projects</a></li>
-                <li><a href="gallery.html">SIG's</a></li>                
-                <li><a href="careers.html">Alumni</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#pub">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#sig">SIG's</a></li>                
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#about">About Us</a></li>
               </ul>           
             </div><!--/.nav-collapse -->
           </div>     
@@ -48,30 +50,34 @@
       <!-- END MENU -->    
     </header>
 
-   
-  <!-- Full Page Image Background Carousel Header -->
+<div id="main" style="margin-top: 300px;">
+<section ng-view></section>
+
+</div>   
+<!--
+  <!-- Full Page Image Background Carousel Header 
 <section>  
   <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
 
 
-        <!-- Wrapper for Slides -->
+        <!-- Wrapper for Slides 
         <div class="carousel-inner">
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
+                <!-- Set the first background image using inline CSS below. 
                 <div class="fill" style="background-image:url('../res/images/img1.jpg');"></div>
                 <div class="carousel-caption">
                      <h2 class="animated fadeInLeft">Exploring Minds</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
+                <!-- Set the second background image using inline CSS below. 
                 <div class="fill" style="background-image:url('../res/images/img2.jpg');"></div>
                 <div class="carousel-caption">
                      <h2 class="animated fadeInDown">Creating Leaders</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
+                <!-- Set the third background image using inline CSS below. 
                 <div class="fill" style="background-image:url('../res/images/img3.jpg');"></div>
                 <div class="carousel-caption">
                      <h2 class="animated fadeInRight">Threading the team</h2>
@@ -79,7 +85,7 @@
             </div>
         </div>
 
-        <!-- Controls -->
+        <!-- Controls 
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
@@ -95,7 +101,7 @@
 <a class="scroll-down" address="true"></a>
 <section class="about">
 <p>OK SCROLL !</p>
-</section>
+</section>-->
   
     <!--=========== BEGIN FOOTER SECTION ================-->
     <footer id="footer">

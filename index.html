@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scotchApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PICT ACM STUDENT CHAPTER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+<base href="/">      
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script data-require="angular-ui-bootstrap@0.12.0" data-semver="0.12.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="js/index.js"></script>  
+</head>
+
+<body ng-controller="mainController">
+
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+            <div class="navbar-header">
+              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+              <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand">PICT <span>ACM STUDENT CHAPTER</span></a>              
+                     
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" ng-class="!navCollapsed && 'in'">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#pub">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#sig">SIG's</a></li>                
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#about">About Us</a></li>
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+      <!-- END MENU -->    
+    </header>
+
+<div id="main">
+<section ng-view autoscroll="true"></section>
+
+</div>   
+
+  
+    <!--=========== BEGIN FOOTER SECTION ================-->
+    <footer id="footer">
+      <!-- Start footer top area -->
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-ld-4  col-md-4 col-sm-4">
+              <div class="single_footer_widget">
+                <h3>PICT ACM Student Chapter</h3>
+                <p>Address line1<br>Address line2<br>Address line3<br>Email address</p>
+              </div>
+            </div>
+
+            <div class="col-ld-4  col-md-4 col-sm-4">
+              <div class="single_footer_widget">
+                <h3>Social Links</h3>
+                <ul class="footer_social">
+                  <li type="none"><a data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li type="none"><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip"  href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li type="none"><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip"  href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li type="none"><a data-toggle="tooltip" data-placement="top" title="Linkedin" class="soc_tooltip"  href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li type="none"><a data-toggle="tooltip" data-placement="top" title="Youtube" class="soc_tooltip"  href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-ld-4  col-md-4 col-sm-4">
+              <div class="single_footer_widget">
+                <h3>Know More</h3>
+                <ul class="footer_widget_nav">
+                  <li><a href="#">Meets</a></li>
+                  <li><a href="#">Members</a></li>
+                  <li><a href="#">Forum</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+    <!--=========== END FOOTER SECTION ================--> 
+
+</body>
+
+</html>

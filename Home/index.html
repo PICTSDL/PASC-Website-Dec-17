@@ -1,26 +1,41 @@
   <!-- Full Page Image Background Carousel Header -->
 <section>  
-  <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+
+  <div style="height: 305px">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <p>{{slide.text}}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
 
 
-        <!-- Wrapper for Slides -->
+
+
+<!--  <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+
+
+        <!-- Wrapper for Slides 
         <div class="carousel-inner">
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
+                <!-- Set the first background image using inline CSS below. --
                 <div class="fill" style="background-image:url('../res/images/img1.jpg');"></div>
                 <div class="carousel-caption">
                      <h2 class="animated fadeInLeft">Exploring Minds</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
+                <!-- Set the second background image using inline CSS below. --
                 <div class="fill" style="background-image:url('../res/images/img2.jpg');"></div>
                 <div class="carousel-caption">
                      <h2 class="animated fadeInDown">Creating Leaders</h2>
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
+                <!-- Set the third background image using inline CSS below. --
                 <div class="fill" style="background-image:url('../res/images/img3.jpg');"></div>
                 <div class="carousel-caption">
                      <h2 class="animated fadeInRight">Threading the team</h2>
@@ -28,7 +43,7 @@
             </div>
         </div>
 
-        <!-- Controls -->
+        <!-- Controls --
         <span class="left carousel-control" data-target="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
         </span>
@@ -36,7 +51,7 @@
             <span class="icon-next"></span>
         </span>
 
-    </div>
+    </div>-->
 </section>    
 
 <a class="scroll-down" address="true"></a>

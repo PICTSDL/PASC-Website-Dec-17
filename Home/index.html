@@ -1,16 +1,18 @@
   <!-- Full Page Image Background Carousel Header -->
 <section>  
 
-  <div style="height: 305px">
-    <carousel interval="myInterval">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
+
+    <carousel interval="myInterval" class="carousel slide">
+        <div class="carousel-inner">
+      <slide ng-repeat="slide in slides" active="slide.active" class="item">
+        <img ng-src="{{slide.image}}" class="fill">
         <div class="carousel-caption">
-          <p>{{slide.text}}</p>
+          <h2 class="animated fadeInDown">{{slide.text}}</h2>
         </div>
       </slide>
+    </div>
     </carousel>
-  </div>
+
 
 
 

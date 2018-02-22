@@ -11,6 +11,8 @@ p{
 .item,
 .active {
     height: 100%;
+    top: 0;
+    position: absolute;
 }
 
 .carousel-inner {
@@ -34,6 +36,7 @@ p{padding:10px}
     background-size: cover;
     -o-background-size: cover;
     opacity:0.6;
+    margin-top: 0px;
 }
 
 
@@ -229,6 +232,7 @@ p{
   .navbar-default .navbar-brand {font-size: 18px;width:300px;}
   .navbar-default .navbar-nav > li > a {font-size: 12px;padding: 30px 9px;}
   .navbar-brand{width: 160px;}
+  .carousel .carousel-inner .item > .fill {height:100%;width:120%;}
 }
 
 
@@ -236,11 +240,13 @@ p{
 .navbar-default .navbar-nav > li > a {padding: 10px 20px; font-size: 15px;}
 .navbar-toggle{margin-top: 15px;}
 .navbar-default .navbar-brand {margin-bottom: 8px;margin-top: 8px;}
+.carousel .carousel-inner .item > .fill {height:100%;width:120%;}
 }
 
 @media(max-width:350px){
   .navbar-default .navbar-brand {font-size: 16px;width: 300px;margin-top: -44px;}
   .carousel .carousel-caption > h2 {font-size: 40px;}
+  .carousel .carousel-inner .item > .fill {height:100%;width:120%;}
 }
 
 /*--------------------*/

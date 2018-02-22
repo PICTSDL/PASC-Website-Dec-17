@@ -3,9 +3,26 @@ body {
     height: 100%;
 }
 
-p{
-  color: red;
+.heading{
+  margin-top: 75px;
+  padding-left: 20px;
+  background-color: #D3D3D3;
+  width:95%;
+  margin-left: 5px;
+  padding-top:15px;
+  padding-bottom:15px;
+  border-radius: 10px;
+  opacity: 0.8;
 }
+
+.content{
+  line-height: 1.6;
+  font-size: 140%;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
 
 .carousel,
 .item,
@@ -99,18 +116,15 @@ section {
   
 }
 
-p{
-  color: white;
-  font-family: arial;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
 
 .scroll-down {
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;
+}
+
+.scroll-down:hover{
+  cursor: default;
 }
 
 .scroll-down {
@@ -232,7 +246,7 @@ p{
   .navbar-default .navbar-brand {font-size: 18px;width:300px;}
   .navbar-default .navbar-nav > li > a {font-size: 12px;padding: 30px 9px;}
   .navbar-brand{width: 160px;}
-  .carousel .carousel-inner .item > .fill {height:100%;width:120%;}
+  .carousel .carousel-inner .item > .fill {height:100%;}
 }
 
 
@@ -240,13 +254,13 @@ p{
 .navbar-default .navbar-nav > li > a {padding: 10px 20px; font-size: 15px;}
 .navbar-toggle{margin-top: 15px;}
 .navbar-default .navbar-brand {margin-bottom: 8px;margin-top: 8px;}
-.carousel .carousel-inner .item > .fill {height:100%;width:120%;}
+.carousel .carousel-inner .item > .fill {height:100%;}
 }
 
 @media(max-width:350px){
   .navbar-default .navbar-brand {font-size: 16px;width: 300px;margin-top: -44px;}
   .carousel .carousel-caption > h2 {font-size: 40px;}
-  .carousel .carousel-inner .item > .fill {height:100%;width:120%;}
+  .carousel .carousel-inner .item > .fill {height:100%;}
 }
 
 /*--------------------*/

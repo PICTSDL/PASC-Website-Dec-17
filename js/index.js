@@ -8,7 +8,7 @@
 
 // create the module and name it scotchApp
         // also include ngRoute for all our routing needs
-    var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.bootstrap']);
+    var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.bootstrap', 'duScroll']);
 
     // configure our routes
     scotchApp.config(function($routeProvider,$locationProvider) {
@@ -51,23 +51,22 @@
     });
 
     // create the controller and inject Angular's $scope
-    scotchApp.controller('mainController', function($scope) {
+    scotchApp.controller('mainController', function($scope, $document) {
         // create a message to display in our view
-        $scope.title = 'HOME';
+        $scope.title = 'Home';
           $scope.myInterval = 5000;
           var slides = $scope.slides = [];
           $scope.addSlide = function() {
             var newWidth = slides.length + 1;
             slides.push({
               image: '../res/images/img' + newWidth + '.jpg',
-              text: ['More','Extra','Lots of','Surplus'][slides.length % 3] + ' ' +
-                ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 3]
+              text: ['Exploring minds','Building leaders','Team spirit'][slides.length % 3]
             });
           };
           for (var i=0; i<3; i++) {
             $scope.addSlide();
           }
-    });
+    }).value('duScrollOffset', 30);
 
     scotchApp.controller('pubController', function($scope) {
         // create a message to display in our view

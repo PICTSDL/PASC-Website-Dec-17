@@ -8,7 +8,7 @@
 
 // create the module and name it scotchApp
         // also include ngRoute for all our routing needs
-    var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.bootstrap', 'duScroll']);
+    var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.bootstrap', 'duScroll', 'simpleAngularTicker']);
 
     // configure our routes
     scotchApp.config(function($routeProvider,$locationProvider) {
@@ -66,6 +66,46 @@
           for (var i=0; i<3; i++) {
             $scope.addSlide();
           }
+
+          $scope.myTickerItems = [
+               {
+                 title: 'item 1',
+                 copy: 'amazing copy here'
+               },
+               {
+                 title: 'item 2',
+                 copy: 'wow, this is great'
+               },
+               {
+                 title: 'item 3',
+                 copy: 'hello angular'
+               },
+               {
+                 title: 'item 4',
+                 copy: 'amazing copy here'
+               },
+               {
+                 title: 'item 5',
+                 copy: 'wow, this is great'
+               },
+               {
+                 title: 'item 6',
+                 copy: 'hello angular'
+               },
+               {
+                 title: 'item 7',
+                 copy: 'amazing copy here'
+               },
+               {
+                 title: 'item 8',
+                 copy: 'wow, this is great'
+               },
+               {
+                 title: 'item 9',
+                 copy: 'hello angular'
+               }
+          ];
+
     }).value('duScrollOffset', 30);
 
     scotchApp.controller('pubController', function($scope) {

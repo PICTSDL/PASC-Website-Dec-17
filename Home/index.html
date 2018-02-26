@@ -23,9 +23,13 @@
         <div class="col-lg-7 col-md-7 col-sm-12 content">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-12"></div>
-        <div class="col-sm-12 col-md-4 col-lg-4 content" style="border-left: 2px solid #D3D3D3";>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        
+        <div class="col-sm-12 col-md-5 col-lg-5 content" style="border-left: 2px solid #D3D3D3";>
+            <ul ticker style="background-color: #D3D3D3;width: 400px;margin-left: 35px;">
+              <li ng-repeat="item in myTickerItems" class="item-{{$index}}">
+                {{item.title}} - {{item.copy}}
+              </li>
+            </ul>
         </div>
     </div>
 </div>
